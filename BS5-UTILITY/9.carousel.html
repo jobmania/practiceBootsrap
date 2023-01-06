@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="#" type="image/x-icon" />
+  <title>Bootstrap 5 Basics</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div id="carouselExampleSlidesOnly" class="carousel carousel-fade slide" data-bs-ride="carousel">
+
+      <!-- 인디케이터 -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+
+      <!-- 이미지 슬라이더 -->
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" data-bs-interval="1">
+          <img src="img/slide1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="1">
+          <img src="img/slide2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="1">
+          <img src="img/slide3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+
+      <!-- 컨트롤 버튼 -->
+      <!-- 타겟에 #id 입력 -->
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </div>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
