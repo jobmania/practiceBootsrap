@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="#" type="image/x-icon" />
+  <title>Bootstrap 5 Basics</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+
+<body>
+  <!-- NAVBAR-->
+  <!-- navbar-expand-sm에 따라 화면이 좁아졌을 시 메뉴를 안보이게함. -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">
+        제목 🤢
+      </a>
+
+      <!-- md 이하가 될시 #navBar가 사라지고 밑에 것이 나오게됨(햄버거 아이콘) -->
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- md 이하가 될시 #navBar가 사라짐 -->
+      <div class="collapse navbar-collapse" id="navBar">
+        <!-- 메뉴리스트 -->
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <!-- active로 진하게 표시 -->
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#" class="dropdown-item">1 1Dropdown item</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">2 2Dropdown item</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">3 3Dropdown item</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">4 4 Dropdown item</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <!-- 검색창 -->
+        <form action="" class="d-flex">
+          <input type="text" class="form-control me-2">
+          <button class="btn btn-outline-light">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
